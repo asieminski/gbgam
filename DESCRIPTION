@@ -1,0 +1,35 @@
+Package: gbgam
+Title: Gradient Boosting for Generalised Additive Models
+Version: 1.0.0
+Authors@R: 
+    person("Antoni", "Sieminski", , "a.m.sieminski@gmail.com", role = c("aut", "cre"))
+Description: Fits exponential family generalised additive models by
+    component-wise gradient boosting, using penalised regression spline base
+    learners built from 'mgcv' smooth terms, including scale-invariant tensor
+    product interactions. The effective degrees of freedom of the boosted
+    model are tracked during fitting, either exactly or with a randomised
+    trace estimator, and are used for adaptive smoothness relaxation of the
+    base learners and for AIC-based selection of the stopping iteration. The
+    stopping iteration can also be selected by cross-validation or bootstrap
+    estimates of the prediction error, and fits can be resumed. An
+    approximate covariance matrix of the coefficients can optionally be
+    obtained by parametric bootstrap or Bayesian backfitting.
+License: GPL (>= 3)
+URL: https://github.com/asieminski/gbgam
+BugReports: https://github.com/asieminski/gbgam/issues
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Depends:
+    R (>= 4.1.0)
+Imports:
+    mgcv,
+    MASS,
+    checkmate,
+    cli
+Suggests:
+    mgcViz,
+    pkgload,
+    SuppDists,
+    testthat (>= 3.1.7)
+Config/testthat/edition: 3

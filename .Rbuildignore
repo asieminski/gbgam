@@ -1,0 +1,5 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^tests/coverage_tests$
+^Rplots\.pdf$
+^cran-comments\.md$
